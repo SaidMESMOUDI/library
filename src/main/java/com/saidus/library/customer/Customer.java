@@ -43,3 +43,5 @@ public class Customer {
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "pk.customer", cascade = CascadeType.ALL)
     Set<LoanId> loans = new HashSet<LoanId>();
 }
+
+

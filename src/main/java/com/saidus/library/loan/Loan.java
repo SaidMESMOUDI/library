@@ -8,11 +8,8 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "LOAN")
-@NoArgsConstructor
-@AllArgsConstructor
-@Data
-@ToString
-@EqualsAndHashCode
+@NoArgsConstructor @AllArgsConstructor
+@Data @ToString @EqualsAndHashCode
 @AssociationOverrides({
         @AssociationOverride(name = "pk.book", joinColumns = @JoinColumn(name = "BOOK_ID")),
         @AssociationOverride(name = "pk.customer", joinColumns = @JoinColumn(name = "CUSTOMER_ID"))
